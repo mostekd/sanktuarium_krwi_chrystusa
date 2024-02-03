@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #a10000; /* Dodaj kolor tła dla nagłówka */
+}
+
+.header h2 {
+    color: #FFD700; /* Dodaj kolor tekstu dla nagłówka */
+}
+
+.header button {
+    padding: 10px;
+    background-color: #ff0000;
+    color: #FFD700;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.header button a {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+.header button:hover {
+    background-color: #800000;
+}
