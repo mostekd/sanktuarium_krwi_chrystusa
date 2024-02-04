@@ -23,5 +23,6 @@ if (!isset($_SESSION["admin_logged_in"]) || $_SESSION["admin_logged_in"] !== tru
             <a href="login.php" id="logout">Wyloguj się</a>
         </button>
     </div>
+   
 </body>
 </html>
