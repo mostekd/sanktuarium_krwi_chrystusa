@@ -25,7 +25,38 @@ nav {
     transition: transform 0.3s ease-in-out; /* Add this line */
 }
 .nav-links li {
+    position: relative;
     margin-right: 20px;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #ff0000;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1;
+}
+
+.nav-links li:hover .submenu {
+    display: block;
+}
+
+.submenu a {
+    width: 250px;
+    color: #FFD700;
+    text-decoration: none;
+    font-size: 1em;
+    display: block;
+    margin: 5px 0;
+}
+
+.submenu a:hover {
+    color: #ffffff;
+}
+.submenu hr{
+    border: 1px solid;
+    border-color: #FFD700;
 }
 .nav-links a {
     text-decoration: none;
