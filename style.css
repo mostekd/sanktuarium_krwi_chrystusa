@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans&family=Protest+Riot&family=Source+Code+Pro&display=swap');
 body {
     margin: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Playpen Sans', cursive;
 }
 header {
     background-color: #ff0000;
