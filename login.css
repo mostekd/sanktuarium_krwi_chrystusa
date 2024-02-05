@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Playpen+Sans&family=Protest+Riot&family=Source+Code+Pro&display=swap');
+*{
+    font-family: 'Nunito', sans-serif;
+}
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
