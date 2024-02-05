@@ -79,6 +79,6 @@ if (!isset($_SESSION["admin_logged_in"]) || $_SESSION["admin_logged_in"] !== tru
         </ul>
         <div class="burger">&#9776;</div>
     </nav>
-    <script src="./script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
