@@ -130,9 +130,32 @@ nav {
     background-color: #ff0000;
     border-radius: 10px;
     padding: 10px;
-}
-.ogloszenia a{
     color: #FFD700;
     text-decoration: none;
     font-size: 20px;
+    transition: color 0.3s ease-in-out;
+}
+
+.ogloszenia:hover{
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.wpisy {
+    width: 85vw;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(238, 238, 238);
+    border-radius: 13px;
+    padding: 5px;
+    border: solid 3px #ff0000;
+}
+
+.main {
+    width: 100vw;
+    height: 86.4vh;
+    display: flex;
+    padding-top: 10px;
+    justify-content: center;
 }

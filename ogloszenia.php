@@ -7,7 +7,6 @@
     <title>Sanktuarium Krwi Chrystusa</title>
 </head>
 <body>
-
 <header>
     <div class="logo"><img src="./zdj/tło.png" alt="logo"></div>
     <nav>
@@ -70,9 +69,25 @@
         <div class="burger">&#9776;</div>
     </nav>
 </header>
-    <button class="ogloszenia" onclick="window.location.href='./ogloszenia.php'">
-        Ogłoszenia
-    </button>
+<section class="main"><div class="wpisy">
+        <?php 
+        require_once("db_connection.php");
+        $query = "SELECT * FROM wpisy";
+        $stmt = $pdo->query($query);
+        $ogloszenia = $stmt->fetchAll();
+
+        foreach ($ogloszenia as $ogloszenie) {
+            echo "<div class='wpis'>";
+            echo "<h2>" . $ogloszenie["tytul_wpisu"] . "</h2>";
+            echo "<p>" . $ogloszenie["data"] . "</p>";
+            echo "<p>" . $ogloszenie["tresc_wpisu"] . "</p>";
+            echo "</div>";
+        }
+    ?>
+</div> </section>
+
+
+
 <script src="./js/script.js"></script>
 </body>
 </html>

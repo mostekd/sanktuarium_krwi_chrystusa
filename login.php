@@ -1,11 +1,12 @@
 <?php
 session_start();
 
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     require_once("db_connection.php"); // Załóżmy, że to plik z połączeniem do bazy danych
 
     $username = $_POST["username"];
-    $password = $_POST["password"];
+    $password = sha1($_POST["password"]);
 
     // Sprawdzenie danych logowania w bazie danych
     $query = "SELECT * FROM Administratorzy WHERE login = :username AND haslo = :password";
