@@ -16,62 +16,62 @@
     <nav>
         <ul class="nav-links">
             <li> 
-                <a href="./index_admin.html">Strona Główna</a>
+                <a href="./index_admin.php">Strona Główna</a>
             </li>   
             <li>
-                <a href="./sakramenty_admin.html">Sakramenty</a>
+                <a href="./sakramenty_admin.php">Sakramenty</a>
                 <div class="submenu">
-                    <a href="./chrzest_admin.html">Chrzest</a>
+                    <a href="./chrzest_admin.php">Chrzest</a>
                     <hr>
-                    <a href="./eucharystia_admin.html">Komunia Święta</a>
+                    <a href="./eucharystia_admin.php">Komunia Święta</a>
                     <hr>
-                    <a href="./spowiedz_admin.html">Pokuta i pojednanie</a>
+                    <a href="./spowiedz_admin.php">Pokuta i pojednanie</a>
                     <hr>
-                    <a href="./bierzmowanie_admin.html">Bierzmowanie</a>
+                    <a href="./bierzmowanie_admin.php">Bierzmowanie</a>
                     <hr>
-                    <a href="./malzenstwo_admin.html">Małżeństwo</a>
+                    <a href="./malzenstwo_admin.php">Małżeństwo</a>
                     <hr>
-                    <a href="./kaplanstwo_admin.html">Kapłaństwo</a>
+                    <a href="./kaplanstwo_admin.php">Kapłaństwo</a>
                     <hr>
-                    <a href="./namaszczenie_chorych_admin.html">Namaszczenie chorych</a>
+                    <a href="./namaszczenie_chorych_admin.php">Namaszczenie chorych</a>
                     <!-- Dodaj więcej podstron, jeśli jest to potrzebne -->
                 </div>
             </li>
             <li>
-                <a href="./o_parafii_admin.html">O Parafii</a>
+                <a href="./o_parafii_admin.php">O Parafii</a>
                 <div class="submenu">
-                    <a href="./duszpasterze_admin.html">Duszpasterze</a>
+                    <a href="./duszpasterze_admin.php">Duszpasterze</a>
                     <hr>
-                    <a href="./galeria_admin.html">Galeria</a>
+                    <a href="./galeria_admin.php">Galeria</a>
                     <hr>
-                    <a href="./ogloszenia_admin.html">Ogłoszenia</a>
+                    <a href="./ogloszenia_admin.php">Ogłoszenia</a>
                     <!-- Dodaj więcej podstron, jeśli jest to potrzebne -->
                 </div>
             </li>
             <li>
-                <a href="./kalendarz_admin.html">Kalendarz</a>
+                <a href="./kalendarz_admin.php">Kalendarz</a>
             </li>
             <li>
-                <a href="./grupy_i_wspolnoty_admin.html">Grupy i Wspólnoty</a>
+                <a href="./grupy_i_wspolnoty_admin.php">Grupy i Wspólnoty</a>
                 <div class="submenu">
-                    <a href="./nowe_buklaki_admin.html">Nowe Bukłaki</a>
+                    <a href="./nowe_buklaki_admin.php">Nowe Bukłaki</a>
                     <hr>
-                    <a href="./32_swdh_zwiad_admin.html">32 ŚWDH "Zwiad"</a>
+                    <a href="./32_swdh_zwiad_admin.php">32 ŚWDH "Zwiad"</a>
                     <!-- Dodaj więcej podstron, jeśli jest to potrzebne -->
                 </div>
             </li>
             <li>
-                <a href="./kdm_admin.html">Kasperiańskie Dni Młodzierzy</a>
+                <a href="./kdm_admin.php">Kasperiańskie Dni Młodzierzy</a>
             </li>
             <li>
-                <a href="./kontakt_admin.html">Kontakt</a>
+                <a href="./kontakt_admin.php">Kontakt</a>
             </li>
         </ul>
         <div class="burger">&#9776;</div> <!-- XDDDDDDDDDD - mac -->
 
     </nav>
 
-    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" class="ogloszenia_admin">
                 nazwa wpisu: <input type="text" name="title"><br>
                 treść: <input type="text" name="description"><br>
                 <input type="submit">
