@@ -4,7 +4,9 @@
     margin: 0;
     font-family: 'Nunito', sans-serif;
 }
-
+body{
+    background-color: #2f2f2f;  
+}
 .header {
     display: flex;
     justify-content: space-between;
@@ -143,7 +145,6 @@ nav {
 }
 .ogloszenia_admin{
     font-size: large;
-    background-color: #2f2f2f;
     color: #ff0000;
 }
 .ogloszenia_admin input{
