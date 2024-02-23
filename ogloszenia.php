@@ -69,24 +69,24 @@
         <div class="burger">&#9776;</div>
     </nav>
 </header>
-<section class="main"><div class="wpisy">
+<section class="main">
+    <div class="wpisy">
         <?php 
         require_once("db_connection.php");
         $query = "SELECT * FROM wpisy ORDER BY data DESC";
         $stmt = $pdo->query($query);
         $ogloszenia = $stmt->fetchAll();
 
-        foreach ($ogloszenia as $ogloszenie) {
-            echo "<div class='wpis'>";
-            echo "<h2>" . $ogloszenie["tytul_wpisu"] . "</h2>";
-            echo "<p>" . $ogloszenie["data"] . "</p>";
-            echo "<p>" . $ogloszenie["tresc_wpisu"] . "</p>";
-            echo "</div>";
-        }
-    ?>
-</div> </section>
-
-
+            foreach ($ogloszenia as $ogloszenie) {
+                echo "<div class='wpis'>";
+                echo "<h2>" . $ogloszenie["tytul_wpisu"] . "</h2>";
+                echo "<p>" . $ogloszenie["data"] . "</p>";
+                echo "<p>" . $ogloszenie["tresc_wpisu"] . "</p>";
+                echo "</div>";
+            }
+        ?>
+    </div> 
+</section>
 
 <script src="./js/script.js"></script>
 </body>
