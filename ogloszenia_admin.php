@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="admin_panel.css">
 </head>
 <body>
-    <div class="header">
-        <h2>Sanktuarium Krwii Chrystusa<br>Panel Administracyjny</h2>
+        <div class="header">
+            <h2>Sanktuarium Krwi Chrystusa<br>Panel Administracyjny</h2>
         <button>
             <a href="login.php" id="logout">Wyloguj się</a>
         </button>
@@ -67,14 +67,13 @@
                 <a href="./kontakt_admin.php">Kontakt</a>
             </li>
         </ul>
-        <div class="burger">&#9776;</div> <!-- XDDDDDDDDDD - mac -->
-
+        <div class="burger">&#9776;</div>
     </nav>
 
     <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" class="ogloszenia_admin">
-                nazwa wpisu: <input type="text" name="title"><br>
-                treść: <input type="text" name="description"><br>
-                <input type="submit">
+                <p>nazwa wpisu:</p> <input type="text" name="title"><br>
+                <p>treść:</p> <input type="text" name="description" class="tresc"><br>
+                <input type="submit" class="submit">
             </form>
 
 

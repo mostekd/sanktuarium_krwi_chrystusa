@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="header">
-        <h2>Sanktuarium Krwii Chrystusa<br>Panel Administracyjny</h2>
+        <h2>Sanktuarium Krwi Chrystusa<br>Panel Administracyjny</h2>
         <button>
             <a href="login.php" id="logout">Wyloguj się</a>
         </button>
