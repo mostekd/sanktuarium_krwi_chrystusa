@@ -79,6 +79,11 @@ nav {
     color: #FFD700;
     cursor: pointer;
 }
+
+.zdjecia_sakramenty img{
+    height: 30vh;
+}
+
 @media only screen and (max-width: 768px) {
     .nav-links {
         list-style: none;
